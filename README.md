@@ -149,4 +149,4 @@ MIT
 
 ---
 
-Built with :paw_prints: by [ThisIsJeron](https://github.com/ThisIsJeron) and Clawd
+Built with :paw_prints: by [Bapan Sardar](https://github.com/MotoBwi)
