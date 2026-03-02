@@ -181,7 +181,7 @@ DELETE /better-gateway/api/files?path=/test.md</pre>
   
   <hr style="margin: 40px 0; border-color: #333;">
   <p style="color: #666; font-size: 0.85em;">
-    <a href="https://github.com/ThisIsJeron/Quantum_Cortex-better-gateway" style="color: #00d4ff;">GitHub</a> · 
+    <a href="https://github.com/MotoBwi/Quantum_Cortex-Better-gateway" style="color: #00d4ff;">GitHub</a> · 
     Config: reconnect=${config.reconnectIntervalMs}ms, maxAttempts=${config.maxReconnectAttempts}
   </p>
 </body>
@@ -192,7 +192,7 @@ function generateUserscript(config: PluginConfig, gatewayUrl: string): string {
   const script = loadInjectScript();
   return `// ==UserScript==
 // @name         Better Gateway - Auto Reconnect
-// @namespace    https://github.com/ThisIsJeron/Quantum_Cortex-better-gateway
+// @namespace    https://github.com/MotoBwi/Quantum_Cortex-Better-gateway
 // @version      1.0.0
 // @description  Adds automatic WebSocket reconnection to Quantum_Cortex Gateway UI
 // @match        ${gatewayUrl}/*

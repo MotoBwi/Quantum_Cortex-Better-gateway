@@ -25,12 +25,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ThisIsJeron/Quantum_Cortex-better-gateway.git"
+    "url": "https://github.com/MotoBwi/Quantum_Cortex-Better-gateway.git"
   },
   "bugs": {
-    "url": "https://github.com/ThisIsJeron/Quantum_Cortex-better-gateway/issues"
+    "url": "https://github.com/MotoBwi/Quantum_Cortex-Better-gateway/issues"
   },
-  "homepage": "https://github.com/ThisIsJeron/Quantum_Cortex-better-gateway#readme",
+  "homepage": "https://github.com/MotoBwi/Quantum_Cortex-Better-gateway#readme",
   "files": [
     "dist",
     "!dist/**/*.map",
