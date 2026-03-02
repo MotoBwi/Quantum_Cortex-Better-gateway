@@ -1,0 +1,54 @@
+{
+  "name": "@sbapan/Quantum_Cortex-Better-gateway",
+  "version": "1.2.4",
+  "description": "Quantum_Cortex plugin that enhances the gateway UI with auto-reconnect and connection monitoring",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc && cp src/inject.js dist/inject.js",
+    "deploy": "npm run build && cp -r dist/* ../../../extensions/Quantum_Cortex-better-gateway/dist/ && cp src/inject.js ../../../extensions/Quantum_Cortex-better-gateway/dist/inject.js && echo 'Deployed to extensions. Restart gateway to apply.'",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build",
+    "release": "node -e \"const v=process.argv[1]; if(!v){console.error('Usage: npm run release -- X.Y.Z');process.exit(1)} const fs=require('fs'); const pkg=JSON.parse(fs.readFileSync('package.json','utf8')); pkg.version=v; fs.writeFileSync('package.json',JSON.stringify(pkg,null,2)+'\\n'); const plug=JSON.parse(fs.readFileSync('Quantum_Cortex.plugin.json','utf8')); plug.version=v; fs.writeFileSync('Quantum_Cortex.plugin.json',JSON.stringify(plug,null,2)+'\\n'); console.log('Updated package.json and Quantum_Cortex.plugin.json to v'+v);\" --"
+  },
+  "keywords": [
+    "Quantum_Cortex",
+    "Quantum_Cortex-plugin",
+    "gateway",
+    "websocket",
+    "auto-reconnect"
+  ],
+  "author": "ThisIsJeron",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ThisIsJeron/Quantum_Cortex-better-gateway.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ThisIsJeron/Quantum_Cortex-better-gateway/issues"
+  },
+  "homepage": "https://github.com/ThisIsJeron/Quantum_Cortex-better-gateway#readme",
+  "files": [
+    "dist",
+    "!dist/**/*.map",
+    "Quantum_Cortex.plugin.json",
+    "README.md"
+  ],
+  "optionalDependencies": {
+    "node-pty": "^1.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "jsdom": "^26.0.0",
+    "typescript": "^5.5.0",
+    "vitest": "^3.0.0"
+  },
+  "Quantum_Cortex": {
+    "extensions": [
+      "dist/index.js"
+    ]
+  }
+}
