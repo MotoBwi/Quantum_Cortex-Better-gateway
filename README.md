@@ -60,7 +60,7 @@ Then restart your gateway.
 ### From source
 
 ```bash
-git clone [https://github.com/MotoBwi/Quantum_Cortex-Better-gateway.git]
+git clone https://github.com/MotoBwi/Quantum_Cortex-Better-gateway.git
 cd Quantum_Cortex-Better-gateway
 npm install && npm run build
 Quantum_Cortex plugins install -l .
