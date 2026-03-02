@@ -1,5 +1,5 @@
 {
-  "name": "@sbapan/Quantum_Cortex-Better-gateway",
+  "name": "@quantumhashcorporation/quantum-cortex-better-gateway",
   "version": "1.2.4",
   "description": "Quantum_Cortex plugin that enhances the gateway UI with auto-reconnect and connection monitoring",
   "type": "module",
